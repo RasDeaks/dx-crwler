@@ -31,7 +31,7 @@ public class HelloResource {
     public TemplateInstance search(@QueryParam("name") String name) {
         Log.info("GET /search : name=" + name);
         if (null == name || name.isEmpty()){
-            return Templates.search("Anon");
+            return Templates.search("Anon 1");
         }
         return Templates.search(name);
     }
